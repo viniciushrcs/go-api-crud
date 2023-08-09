@@ -11,7 +11,7 @@ func NewID() ID {
 	return ID(uuid.New())
 }
 
-func ParseID(id string) (ID, error) {
-	id, err := uuid.Parse(id)
+func ParseID(s string) (ID, error) {
+	id, err := uuid.Parse(s)
 	return ID(id), err
 }
